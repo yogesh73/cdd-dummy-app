@@ -1,10 +1,7 @@
 package com.ca.cdd.dummy.controllers;
 
 
-import com.ca.cdd.dummy.lib.CentralLibrary;
-import com.ca.cdd.dummy.lib.ComicsLibrary;
-import com.ca.cdd.dummy.lib.ExactSciencesLibrary;
-import com.ca.cdd.dummy.lib.Library;
+import com.ca.cdd.dummy.lib.*;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -17,11 +14,11 @@ public class LibraryController {
 
     @GET
     public String getLibraries() {
-        Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary() };
+        Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(new InnerClassCallToClass.CallPrintStr()) };
         StringBuffer sb = new StringBuffer("[ ");
-        for (short i=0; i<3; i++) {
+        for (short i=0; i<5; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
-            if (i!=2) {
+            if (i!=4) {
                 sb.append(", ");
             }
         }
@@ -41,7 +38,18 @@ public class LibraryController {
         if ("2".equals(id)) {
             return new ExactSciencesLibrary().getType();
         }
-
+        if ("3".equals(id)) {
+            InnerClassCallToClass.CallPrintStr callToInnerClass = new InnerClassCallToClass.CallPrintStr();
+            return callToInnerClass.innerClass("Calling to Inner Class, make sure the class name returned From Agent 3");
+        }
+        if ("4".equals(id)) {
+            InnerClassCallToClass.CallPrintStr callToInnerClass = new InnerClassCallToClass.CallPrintStr();
+            return callToInnerClass.innerClass("Calling to Inner Class, make sure the class name returned From Agent 4");
+        }
         return "I don't know what you are talking about? Give me a normal id!";
+    }
+
+    public static void main(String[] args) {
+
     }
 }
