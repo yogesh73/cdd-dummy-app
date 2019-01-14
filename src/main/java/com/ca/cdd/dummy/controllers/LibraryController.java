@@ -14,7 +14,8 @@ public class LibraryController {
 
     @GET
     public String getLibraries() {
-        Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(), new InnerClassCallToClass.CallPrintStr()};
+        Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(), new InnerClassCallToClass.CallPrintStr(),
+                                    new ImplemetInterface(), new AnonymousClass()};
         StringBuffer sb = new StringBuffer("[ ");
         for (short i=0; i< libraries.length; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
@@ -40,12 +41,16 @@ public class LibraryController {
         }
         if ("3".equals(id)) {
             InnerClassCallToClass.CallPrintStr callToInnerClass = new InnerClassCallToClass.CallPrintStr();
-            return callToInnerClass.innerClass("Calling to Inner Class, make sure the class name returned From Agent 3");
+            return callToInnerClass.innerClass("Calling to Inner Class");
         }
         if ("4".equals(id)) {
-            InnerClassCallToClass.CallPrintStr callToInnerClass = new InnerClassCallToClass.CallPrintStr();
-            return callToInnerClass.innerClass("Calling to Inner Class, make sure the class name returned From Agent 4");
+            return new ImplemetInterface().interfaceStingMethod();
         }
+        if ("5".equals(id)) {
+            AnonymousClass a = new AnonymousClass();
+            return a.interfaceStingMethod();
+        }
+
         return "I don't know what you are talking about? Give me a normal id!";
     }
 
