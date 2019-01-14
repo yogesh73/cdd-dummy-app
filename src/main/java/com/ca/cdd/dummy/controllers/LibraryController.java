@@ -16,9 +16,9 @@ public class LibraryController {
     public String getLibraries() {
         Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(new InnerClassCallToClass.CallPrintStr()) };
         StringBuffer sb = new StringBuffer("[ ");
-        for (short i=0; i<5; i++) {
+        for (short i=0; i<4; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
-            if (i!=4) {
+            if (i!=3) {
                 sb.append(", ");
             }
         }

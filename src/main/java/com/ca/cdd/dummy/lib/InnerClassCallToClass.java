@@ -14,11 +14,11 @@ public class InnerClassCallToClass extends Library {
         callPrintStr.innerClass(s);
     }
 
-    private static String NAME = new CallPrintStr().innerClass("ddd");
+    private static String NAME = new CallPrintStr().innerClass("CallPrintStr");
 
     @Override
     public String getName() {
-        return null;
+        return NAME;
     }
 
     public static class CallPrintStr {
