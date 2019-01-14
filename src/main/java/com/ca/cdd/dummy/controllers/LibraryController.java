@@ -14,11 +14,11 @@ public class LibraryController {
 
     @GET
     public String getLibraries() {
-        Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(new InnerClassCallToClass.CallPrintStr()) };
+        Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(), new InnerClassCallToClass.CallPrintStr()};
         StringBuffer sb = new StringBuffer("[ ");
-        for (short i=0; i<4; i++) {
+        for (short i=0; i< libraries.length; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
-            if (i!=3) {
+            if (i != libraries.length-1) {
                 sb.append(", ");
             }
         }
