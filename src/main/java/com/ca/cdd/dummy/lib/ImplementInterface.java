@@ -1,6 +1,8 @@
 package com.ca.cdd.dummy.lib;
 
-public class ImplemetInterface extends Library implements InterfaceClass {
+public class ImplementInterface extends Library implements InterfaceClass {
+
+    private static String NAME = "ImplementInterface";
 
     private static String NAME = "ImplemetInterface";
 
@@ -17,10 +19,10 @@ public class ImplemetInterface extends Library implements InterfaceClass {
 
     public static void main(String[] args) {
 
-        ImplemetInterface d = new  ImplemetInterface();
+        ImplementInterface d = new ImplementInterface();
         System.out.println("selected number is: " + d.useAbstractInInterface());
 
-        ImplemetInterface s = new ImplemetInterface();
+        ImplementInterface s = new ImplementInterface();
         System.out.println(s.interfaceStingMethod());
 
     }
