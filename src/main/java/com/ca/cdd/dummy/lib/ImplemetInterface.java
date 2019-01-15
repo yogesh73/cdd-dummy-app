@@ -2,6 +2,8 @@ package com.ca.cdd.dummy.lib;
 
 public class ImplemetInterface extends Library implements InterfaceClass {
 
+    private static String NAME = "ImplemetInterface";
+
     @Override
     public Integer useAbstractInInterface() {
         return 10;
@@ -25,6 +27,6 @@ public class ImplemetInterface extends Library implements InterfaceClass {
 
     @Override
     public String getName() {
-        return null;
+        return NAME;
     }
 }

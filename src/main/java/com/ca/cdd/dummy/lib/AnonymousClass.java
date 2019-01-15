@@ -2,6 +2,7 @@ package com.ca.cdd.dummy.lib;
 
 public class AnonymousClass extends Library implements InterfaceClass {
 
+    private static String NANE = "AnonymousClass";
 
     InterfaceClass anonymusMethos = new InterfaceClass() {
         @Override
@@ -27,6 +28,6 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
     @Override
     public String getName() {
-        return null;
+        return NANE;
     }
 }
