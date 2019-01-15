@@ -15,7 +15,7 @@ public class LibraryController {
     @GET
     public String getLibraries() {
         Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(), new InnerClassCallToClass.CallPrintStr(),
-                                    new ImplemetInterface(), new AnonymousClass()};
+                                    new ImplementInterface(), new AnonymousClass()};
         StringBuffer sb = new StringBuffer("[ ");
         for (short i=0; i< libraries.length; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
@@ -44,7 +44,7 @@ public class LibraryController {
             return callToInnerClass.innerClass("Calling to Inner Class");
         }
         if ("4".equals(id)) {
-            return new ImplemetInterface().interfaceStingMethod();
+            return new ImplementInterface().interfaceStingMethod();
         }
         if ("5".equals(id)) {
             AnonymousClass a = new AnonymousClass();
