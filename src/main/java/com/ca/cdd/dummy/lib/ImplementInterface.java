@@ -15,16 +15,6 @@ public class ImplementInterface extends Library implements InterfaceClass {
     }
 
 
-    public static void main(String[] args) {
-
-        ImplementInterface d = new ImplementInterface();
-        System.out.println("selected number is: " + d.useAbstractInInterface());
-
-        ImplementInterface s = new ImplementInterface();
-        System.out.println(s.interfaceStingMethod());
-
-    }
-
     @Override
     public String getName() {
         return NAME;
