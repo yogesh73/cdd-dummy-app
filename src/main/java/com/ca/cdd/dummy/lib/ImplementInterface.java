@@ -4,8 +4,6 @@ public class ImplementInterface extends Library implements InterfaceClass {
 
     private static String NAME = "ImplementInterface";
 
-    private static String NAME = "ImplemetInterface";
-
     @Override
     public Integer useAbstractInInterface() {
         return 10;
@@ -16,16 +14,6 @@ public class ImplementInterface extends Library implements InterfaceClass {
         return "implementing interface string method";
     }
 
-
-    public static void main(String[] args) {
-
-        ImplementInterface d = new ImplementInterface();
-        System.out.println("selected number is: " + d.useAbstractInInterface());
-
-        ImplementInterface s = new ImplementInterface();
-        System.out.println(s.interfaceStingMethod());
-
-    }
 
     @Override
     public String getName() {
