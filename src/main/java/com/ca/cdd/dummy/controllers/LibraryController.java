@@ -5,6 +5,7 @@ import com.ca.cdd.dummy.lib.*;
 import com.ca.cdd.dummy.lib.classes.in.packages.packages.OneLevelClass;
 import com.ca.cdd.dummy.lib.classes.in.packages.packages.second.level.SecondLevelClass;
 import com.ca.cdd.dummy.lib.classes.in.packages.packages.second.level.third.level.ThirdLevelClass;
+import com.ca.cdd.dummy.lib.threadsclasses.MainThread;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -18,7 +19,8 @@ public class LibraryController {
     @GET
     public String getLibraries() {
         Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(), new InnerClassCallToClass.CallPrintStr(),
-                                    new ImplementInterface(), new AnonymousClass(), new OneLevelClass(), new SecondLevelClass(), new ThirdLevelClass(), new UseParamFromFatherClass()};
+                                    new ImplementInterface(), new AnonymousClass(), new OneLevelClass(), new SecondLevelClass(), new ThirdLevelClass(), new UseParamFromFatherClass(),
+                                    new MainThread()};
         StringBuffer sb = new StringBuffer("[ ");
         for (short i=0; i< libraries.length; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
@@ -64,6 +66,9 @@ public class LibraryController {
         }
         if ("9".equals(id)) {
             return new UseParamFromFatherClass().printParam();
+        }
+        if ("10".equals(id)) {
+            return new MainThread().getName();
         }
 
         return "I don't know what you are talking about? Give me a normal id!";
