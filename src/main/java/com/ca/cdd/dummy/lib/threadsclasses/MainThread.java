@@ -1,6 +1,8 @@
 package com.ca.cdd.dummy.lib.threadsclasses;
 
 import com.ca.cdd.dummy.lib.Library;
+import com.ca.cdd.dummy.lib.Thread5UnkerPkgLib;
+import com.ca.cdd.dummy.lib.classes.in.packages.packages.second.level.Thread4UnderPkgSecondLevel;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,18 +29,18 @@ public class MainThread extends Library {
         Thread t3 = new Thread(thread3);
         t3.start();
 
-        Thread4 thread4 = new Thread4();
+        Thread4UnderPkgSecondLevel thread4 = new Thread4UnderPkgSecondLevel();
         Thread t4 = new Thread(thread4);
         t4.start();
 
-        Thread5 thread5 = new Thread5();
+        Thread5UnkerPkgLib thread5 = new Thread5UnkerPkgLib();
         Thread t5 = new Thread(thread5);
         t5.start();
 
     }
 
     public static List<String> threadsList() {
-        List<String> s = Arrays.asList(Thread1.getName(), Thread2.getName(), Thread3.getName(), Thread4.getName(), Thread5.getName());
+        List<String> s = Arrays.asList(Thread1.getName(), Thread2.getName(), Thread3.getName(), Thread4UnderPkgSecondLevel.getName(), Thread5UnkerPkgLib.getName());
         return s;
     }
 
