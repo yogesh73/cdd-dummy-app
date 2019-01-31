@@ -11,7 +11,6 @@ public class SecondLevelClass extends Library {
         return "Class in Package Tree Second Hierarchy";
     }
 
-
     @Override
     public String getName() {
         return NAME;
