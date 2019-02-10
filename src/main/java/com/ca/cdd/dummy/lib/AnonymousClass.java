@@ -26,6 +26,7 @@ public class AnonymousClass extends Library implements InterfaceClass {
         return anonymusMethos.interfaceStingMethod();
     }
 
+    
     @Override
     public String getName() {
         return NAME;
