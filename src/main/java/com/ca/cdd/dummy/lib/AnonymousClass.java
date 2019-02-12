@@ -14,6 +14,7 @@ public class AnonymousClass extends Library implements InterfaceClass {
         }
     };
 
+
     @Override
     public Integer useAbstractInInterface() {
         return anonymusMethos.useAbstractInInterface();
