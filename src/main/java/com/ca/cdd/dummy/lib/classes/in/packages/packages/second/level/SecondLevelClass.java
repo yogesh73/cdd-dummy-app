@@ -8,6 +8,12 @@ public class SecondLevelClass extends Library {
 
     public String secondLevelClass () {
 
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         return "Class in Package Tree Second Hierarchy";
     }
 
