@@ -4,6 +4,7 @@ public interface InterfaceClass {
 
 
 
+
     Integer useAbstractInInterface();
 
     String interfaceStingMethod();
