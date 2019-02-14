@@ -20,7 +20,7 @@ public class LibraryController {
     public String getLibraries() {
         Library[] libraries = { new CentralLibrary(), new ComicsLibrary(), new ExactSciencesLibrary(), new InnerClassCallToClass(), new InnerClassCallToClass.CallPrintStr(),
                                     new ImplementInterface(), new AnonymousClass(), new OneLevelClass(), new SecondLevelClass(), new ThirdLevelClass(), new UseParamFromFatherClass(),
-                                    new MainThread()};
+                                    new MainThread(), new FailTestSuite()};
         StringBuffer sb = new StringBuffer("[ ");
         for (short i=0; i< libraries.length; i++) {
             sb.append("'").append(i).append("' : '").append(libraries[i].getType()).append("'");
@@ -69,6 +69,9 @@ public class LibraryController {
         }
         if ("10".equals(id)) {
             return new MainThread().getName();
+        }
+        if ("11".equals(id)) {
+            return new FailTestSuite().getName();
         }
 
         return "I don't know what you are talking about? Give me a normal id!";
