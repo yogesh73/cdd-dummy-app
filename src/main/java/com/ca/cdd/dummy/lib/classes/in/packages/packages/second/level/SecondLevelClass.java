@@ -1,5 +1,7 @@
 package com.ca.cdd.dummy.lib.classes.in.packages.packages.second.level;
 
+
+
 import com.ca.cdd.dummy.lib.Library;
 
 public class SecondLevelClass extends Library {
