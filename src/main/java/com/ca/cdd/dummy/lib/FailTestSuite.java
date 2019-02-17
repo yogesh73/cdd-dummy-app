@@ -9,6 +9,4 @@ public class FailTestSuite extends Library {
     public String getName() {
         return NAME;
     }
-
-
 }
