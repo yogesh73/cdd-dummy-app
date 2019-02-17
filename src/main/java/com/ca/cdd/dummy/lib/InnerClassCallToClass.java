@@ -11,8 +11,6 @@ public class InnerClassCallToClass extends Library {
         this.callPrintStr = callPrintStr;
     }
 
-
-
     public InnerClassCallToClass() {
     }
 
