@@ -8,6 +8,5 @@ public class FailTestSuite extends Library {
     @Override
     public String getName() {
         return NAME;
-        
     }
 }
