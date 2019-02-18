@@ -7,5 +7,4 @@ public class ComicsLibrary extends Library {
         return NAME;
         
     }
-    
 }
