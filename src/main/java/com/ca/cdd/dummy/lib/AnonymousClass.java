@@ -31,4 +31,6 @@ public class AnonymousClass extends Library implements InterfaceClass {
     public String getName() {
         return NAME;
     }
+   
+  
 }
