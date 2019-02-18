@@ -19,4 +19,5 @@ public class ImplementInterface extends Library implements InterfaceClass {
     public String getName() {
         return NAME;
     }
+
 }
