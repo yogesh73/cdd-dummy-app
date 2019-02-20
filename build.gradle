@@ -10,6 +10,9 @@ dependencies {
     compile group: "org.glassfish.jersey.media", name: "jersey-media-json-jackson", version: "2.21"
 }
 
+
 war {
     archiveName 'dummy.war'
 }
+
+apply from: 'robot.gradle'
