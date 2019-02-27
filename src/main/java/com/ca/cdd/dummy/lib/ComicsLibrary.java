@@ -8,5 +8,4 @@ public class ComicsLibrary extends Library {
     public String getName() {
         return NAME;
     }
-    
 }
