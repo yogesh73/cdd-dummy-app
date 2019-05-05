@@ -15,6 +15,5 @@ public class CentralLibrary extends Library {
             e.printStackTrace();
         }
         return NAME;
-        
     }
 }
