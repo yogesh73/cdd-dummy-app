@@ -1,9 +1,3 @@
-// uvVqe
-// rd3nc
-// 2Yvde
-// nzp1s
-// tgP9N
-// W6C4h
 package com.ca.cdd.dummy.lib;
 
 public class AnonymousClass extends Library implements InterfaceClass {
