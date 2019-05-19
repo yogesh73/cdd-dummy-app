@@ -2,18 +2,8 @@ package com.ca.cdd.dummy.lib;
 
 public class AnonymousClass extends Library implements InterfaceClass {
  
-
- 
-    private static String NAME = "AnonymousClass";
+  private static String NAME = "AnonymousClass";
      
-
- 
- 
- 
- 
- 
- 
- 
   InterfaceClass anonymusMethos = new InterfaceClass() {
         @Override
         public Integer useAbstractInInterface() {
@@ -25,7 +15,6 @@ public class AnonymousClass extends Library implements InterfaceClass {
             return "Returned From Anonymous Class ";
         }
     };
-
 
     @Override
     public Integer useAbstractInInterface() {
