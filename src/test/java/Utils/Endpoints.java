@@ -14,7 +14,7 @@ public interface Endpoints {
 
     String GET_COVERAGE_DATA_URL = "_/tar-task/" + TAR_TASK_ID_VAR + "/coverage-data";
 
-    String DUMMY_APP_lIBRAHIM_URL = "http://10.162.36.23:8080/dummy/api/libraries";
+    String DUMMY_APP_lIBRAHIM_URL = "http://ratesting-L28083.lvn.broadcom.net:8083/dummy/api/libraries";
 
 
     String ID_VAR = "{id}";
