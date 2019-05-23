@@ -1,0 +1,29 @@
+package startSuite;
+
+import Utils.Library;
+import Utils.TEmulatorUtils;
+import io.qameta.allure.junit4.DisplayName;
+import org.junit.Test;
+import rest.assured.shared.config.TestConfig;
+
+@DisplayName("Monitoring of different class types")
+public class ValdateVisitsCalculation extends TestConfig{
+
+    @DisplayName("Validate Files Visits calculation")
+    @Test
+    public void visitsNumberIsCorrect() throws InterruptedException {
+
+        int numOfVisitForComics =10;
+        int numOfVisitForExactScience =5;
+
+        Thread.sleep(3000);
+        runOperationXtimes(numOfVisitForComics, Library.COMICS_LIBRARY);
+        runOperationXtimes(numOfVisitForExactScience, Library.EXACTSCIENCES_LIBRARY);
+    }
+
+    private void runOperationXtimes (int numOfItr, Library operation) {
+        for (int i=0; i < numOfItr; i++) {
+            TEmulatorUtils.executeOperation(operation);
+        }
+    }
+}

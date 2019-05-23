@@ -1,13 +1,87 @@
+buildscript {
+    repositories {
+        maven { url "http://isl-dsdc.ca.com/artifactory/maven-repo" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'com.ca.cdd.gradle', name: 'tpsr-report', version: '+' // <-- latest version
+        classpath "org.akhikhl.gretty:gretty:2.0.0"
+        classpath "gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.13.0"
+    }
+}
+
+plugins {
+    id "io.qameta.allure" version "2.5"
+}
+
 apply plugin: 'java'
 apply plugin: 'war'
+apply plugin: 'io.qameta.allure'
+
+def caTasksGroupName = "CA - Development"
 
 repositories {
+    maven { url "http://isl-dsdc.ca.com/artifactory/maven-repo" }
     mavenCentral()
 }
 
 dependencies {
     compile group: "org.glassfish.jersey.containers", name: "jersey-container-servlet-core", version: "2.22.1"
     compile group: "org.glassfish.jersey.media", name: "jersey-media-json-jackson", version: "2.21"
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~~~~~~ RestAssured ~~~~~~~~~~~~~~~~~*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+sourceSets {
+    restAssured {
+        java.srcDirs = ['src/integTest/restAssured/java']
+resources.srcDirs = ['src/integTest/restAssured/resources']
+}
+}
+
+dependencies {
+    testCompile 'com.ca.cdd.plugins.test:rest-assured-shared:1.0.8-SNAPSHOT'
+    testCompile "com.ca.cdd:plugins-dto:${plugins_dto_version}"
+    testCompile group: "io.qameta.allure", name: "allure-junit4", version: "2.0-BETA21"
+    testCompile group: "io.qameta.allure", name: "allure-junit4-aspect", version: "2.0-BETA21"
+}
+
+task integTest(type: Test) {
+    ignoreFailures = true
+
+    useJUnit {
+        excludeCategories 'rest.assured.shared.config.DevTest'
+    }
+
+    group caTasksGroupName
+    description "Runs the 'REST Assured' integration tests"
+
+    maxHeapSize = '1024m'
+
+    testClassesDirs = sourceSets.restAssured.output.classesDirs
+    classpath = sourceSets.restAssured.runtimeClasspath
+
+    binResultsDir = file("$buildDir/reports/integ-test-results/binary/integTest")
+
+//    reports {
+//        html.enabled = true
+//        html.destination = "$buildDir/reports/integ-test-report"
+//        junitXml.destination = "$buildDir/reports/integ-test-results"
+//    }
+
+    mustRunAfter tasks.test
+
+    outputs.upToDateWhen { false }
+
+    def PROP_PREFIX = "test."
+    System.getProperties().each { key, val ->
+        if (key.startsWith(PROP_PREFIX)) {
+            def newKey = key.substring(PROP_PREFIX.size())
+            println "~~~> Passing a sys parameter to tests execution: $newKey: $val"
+            systemProperty newKey, val
+        }
+    }
 }
 
 
