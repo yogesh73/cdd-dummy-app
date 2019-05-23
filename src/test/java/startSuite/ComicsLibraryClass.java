@@ -6,6 +6,8 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import rest.assured.shared.config.TestConfig;
 
+import static junit.framework.TestCase.assertEquals;
+
 @DisplayName("Monitoring of different class types")
 public class ComicsLibraryClass extends TestConfig{
 
@@ -15,6 +17,7 @@ public class ComicsLibraryClass extends TestConfig{
 
         Thread.sleep(3000);
         TEmulatorUtils.executeOperation(Library.COMICS_LIBRARY);
+        assertEquals("Fail on purpose", 1, 0);
 
     }
 }
