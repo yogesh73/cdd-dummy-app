@@ -12,3 +12,5 @@ public class ClassWithParamUsedByOtherOnly extends Library {
         return NAME;
     }
 }
+
+// YDaQI
