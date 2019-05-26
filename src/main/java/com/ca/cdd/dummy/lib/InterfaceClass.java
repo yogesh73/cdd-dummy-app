@@ -7,3 +7,5 @@ public interface InterfaceClass {
 
     String interfaceStingMethod();
 }
+
+// YDaQI
