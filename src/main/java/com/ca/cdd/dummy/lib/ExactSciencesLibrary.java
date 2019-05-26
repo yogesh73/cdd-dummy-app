@@ -8,3 +8,4 @@ public class ExactSciencesLibrary extends Library {
         return NAME;
     }
 }
+// YDaQI
