@@ -4,10 +4,10 @@ import Utils.Library;
 import Utils.TEmulatorUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import rest.assured.shared.config.TestConfig;
+import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
-public class AnonymousClassType extends TestConfig{
+public class AnonymousClassType extends LocalTestConfig{
 
     @DisplayName("Test Suite operate class type Anonymous Class")
     @Test

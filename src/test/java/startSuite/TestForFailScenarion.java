@@ -4,10 +4,10 @@ import Utils.Library;
 import Utils.TEmulatorUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import rest.assured.shared.config.TestConfig;
+import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
-public class TestForFailScenarion extends TestConfig{
+public class TestForFailScenarion extends LocalTestConfig{
 
     @DisplayName("Test For Validating Fail Heuristic")
     @Test

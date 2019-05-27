@@ -4,10 +4,10 @@ import Utils.Library;
 import Utils.TEmulatorUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import rest.assured.shared.config.TestConfig;
+import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
-public class StartAfterStartMonitoring extends TestConfig{
+public class StartAfterStartMonitoring extends LocalTestConfig{
 
     @DisplayName("Agent accept Start After Start Without Stop in the middle")
     @Test

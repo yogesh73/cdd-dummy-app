@@ -4,12 +4,12 @@ import Utils.Library;
 import Utils.TEmulatorUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import rest.assured.shared.config.TestConfig;
+import Utils.LocalTestConfig;
 
 import static junit.framework.TestCase.assertEquals;
 
 @DisplayName("Monitoring of different class types")
-public class ComicsLibraryClass extends TestConfig{
+public class ComicsLibraryClass extends LocalTestConfig{
 
     @DisplayName("Test Suite operate class with name ComicsLibrary")
     @Test

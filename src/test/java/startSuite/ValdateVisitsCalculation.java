@@ -4,10 +4,10 @@ import Utils.Library;
 import Utils.TEmulatorUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
-import rest.assured.shared.config.TestConfig;
+import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
-public class ValdateVisitsCalculation extends TestConfig{
+public class ValdateVisitsCalculation extends LocalTestConfig{
 
     @DisplayName("Validate Files Visits calculation")
     @Test
