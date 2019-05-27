@@ -19,3 +19,4 @@ public class UseParamFromFatherClass extends Library {
 // inKTY
 // ISzvG
 // hkZqn
+// DPBlZ
