@@ -1,5 +1,7 @@
 package Utils;
 
+import static rest.assured.shared.config.TestConfig.sutDetails;
+
 public interface Endpoints {
 
     String TAR_TASK_ID = "tarTaskId";
@@ -14,8 +16,7 @@ public interface Endpoints {
 
     String GET_COVERAGE_DATA_URL = "_/tar-task/" + TAR_TASK_ID_VAR + "/coverage-data";
 
-    String DUMMY_APP_lIBRAHIM_URL = "http://ratesting-L28083.lvn.broadcom.net:8083/dummy/api/libraries";
-
+    String DUMMY_APP_lIBRAHIM_URL = "http://" + sutDetails.getHost() + ":" + sutDetails.getPort() + "/dummy/api/libraries";
 
     String ID_VAR = "{id}";
 

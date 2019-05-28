@@ -2,5 +2,5 @@
 HOST=ratesting-L28083.lvn.broadcom.net
 PORT=8083
 SCHEME=http
-CONTEXT_SUFFIX=/ws-emulator
+CONTEXT_SUFFIX=/dummy
 SERVER_URL=${SCHEME}://${HOST}:${PORT}/
