@@ -13,9 +13,8 @@ public class InnerClassType extends LocalTestConfig{
     @Test
     public void innerClassExistInFiles() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.INNERC_LASS_LIBRARY);
-
+        Thread.sleep(1500);
     }
-
 }

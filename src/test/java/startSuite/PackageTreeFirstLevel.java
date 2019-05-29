@@ -13,7 +13,8 @@ public class PackageTreeFirstLevel extends LocalTestConfig{
     @Test
     public void firstLevelExistInFiles() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.FIRST_LEVEL_PKG_CLASS);
+        Thread.sleep(1500);
     }
 }

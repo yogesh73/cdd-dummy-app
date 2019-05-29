@@ -13,7 +13,8 @@ public class PackageTreeSecondLevel extends LocalTestConfig{
     @Test
     public void secondLevelExistInFiles() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.SECOND_LEVEL_PKG_CLASS);
+        Thread.sleep(1500);
     }
 }

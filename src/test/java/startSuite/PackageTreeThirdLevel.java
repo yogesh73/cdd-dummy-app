@@ -13,7 +13,8 @@ public class PackageTreeThirdLevel extends LocalTestConfig{
     @Test
     public void thirdLevelExistInFiles() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.THIRD_LEVEL_PKG_CLASS);
+        Thread.sleep(1500);
     }
 }

@@ -13,9 +13,9 @@ public class InterfaceClassType extends LocalTestConfig{
     @Test
     public void interfaceExistInFiles() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.IMPLEMETN_INTERFACE);
-
+        Thread.sleep(1500);
     }
 
 }

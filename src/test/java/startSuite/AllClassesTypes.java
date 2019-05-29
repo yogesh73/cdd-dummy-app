@@ -12,9 +12,8 @@ public class AllClassesTypes extends LocalTestConfig {
     @Test
     public void allLibrariesExists() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeAllOperations();
-
+        Thread.sleep(1500);
     }
-
 }

@@ -13,9 +13,9 @@ public class MultiThread extends LocalTestConfig{
     @Test
     public void multithreadSuites() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.MULTI_THREAD);
-
+        Thread.sleep(1500);
     }
 
 }

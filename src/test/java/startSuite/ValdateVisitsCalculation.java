@@ -13,12 +13,13 @@ public class ValdateVisitsCalculation extends LocalTestConfig{
     @Test
     public void visitsNumberIsCorrect() throws InterruptedException {
 
+        Thread.sleep(1500);
         int numOfVisitForComics =10;
         int numOfVisitForExactScience =5;
 
-        Thread.sleep(3000);
         runOperationXtimes(numOfVisitForComics, Library.COMICS_LIBRARY);
         runOperationXtimes(numOfVisitForExactScience, Library.EXACTSCIENCES_LIBRARY);
+        Thread.sleep(1500);
     }
 
     private void runOperationXtimes (int numOfItr, Library operation) {

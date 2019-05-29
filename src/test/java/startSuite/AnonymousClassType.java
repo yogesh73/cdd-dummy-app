@@ -13,9 +13,8 @@ public class AnonymousClassType extends LocalTestConfig{
     @Test
     public void anonymousClassExistInFiles() throws InterruptedException {
 
-        Thread.sleep(3000);
-
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.ANONYMOUS_CLASS);
-
+        Thread.sleep(1500);
     }
 }

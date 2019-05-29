@@ -13,15 +13,15 @@ public class SeveralTestsSuites extends LocalTestConfig{
     @Test
     public void sentSeveralTestsSuites() throws InterruptedException {
 
+        Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.COMICS_LIBRARY);
 
         TEmulatorUtils.executeOperation(Library.ANONYMOUS_CLASS);
 
         TEmulatorUtils.executeOperation(Library.INNERC_LASS_LIBRARY);
 
-        Thread.sleep(3000);
-
         runOperationXtimes(2, Library.SECOND_LEVEL_PKG_CLASS);
+        Thread.sleep(1500);
     }
 
     private void runOperationXtimes (int numOfItr, Library operation) {

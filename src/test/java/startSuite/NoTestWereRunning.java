@@ -12,6 +12,5 @@ public class NoTestWereRunning extends LocalTestConfig{
     public void notTestSuitesExecuted() throws InterruptedException {
 
         Thread.sleep(3000);
-
     }
 }
