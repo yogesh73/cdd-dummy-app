@@ -31,10 +31,3 @@ public class AnonymousClass extends Library implements InterfaceClass {
         return NAME;
     }
 }
-
-// gQcNU
-
-// bRCs6
-// Aekv1
-// xNckL
-// 70HHJ
