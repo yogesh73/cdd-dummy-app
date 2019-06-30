@@ -3,9 +3,8 @@ FROM isl-dsdc.ca.com:5001/ca-standard-images/centos72-jre8-tomcat8:latest
 ENV USER_NAME cdd
 ENV GROUP_NAME cdd
 ENV USER_HOME /home/$USER_NAME
-# ENV CDD_HOME_FOLDER $USER_HOME/.cdd
+ENV CDD_HOME_FOLDER $USER_HOME/.cdd
 ENV CDD_CT_AGENT_HOME_FOLDER /usr/local/ct_agent
-ENV CDD_HOME_FOLDER /usr/local/ct_agent
 
 USER root
 
