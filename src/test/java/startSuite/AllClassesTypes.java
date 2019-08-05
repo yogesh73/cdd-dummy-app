@@ -14,6 +14,7 @@ public class AllClassesTypes extends LocalTestConfig {
 
         Thread.sleep(1500);
         TEmulatorUtils.executeAllOperations();
+        
         Thread.sleep(1500);
     }
 }
