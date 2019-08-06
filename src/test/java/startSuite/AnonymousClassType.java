@@ -12,7 +12,6 @@ public class AnonymousClassType extends LocalTestConfig{
     @DisplayName("Test Suite operate class type Anonymous Class")
     @Test
     public void anonymousClassExistInFiles() throws InterruptedException {
-
         Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.ANONYMOUS_CLASS);
         Thread.sleep(1500);
