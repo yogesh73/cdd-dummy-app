@@ -19,4 +19,3 @@ public class MultiThread2 extends LocalTestConfig{
     }
 
 }
-// test111
