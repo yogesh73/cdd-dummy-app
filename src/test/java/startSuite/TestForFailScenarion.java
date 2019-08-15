@@ -19,7 +19,7 @@ public class TestForFailScenarion extends LocalTestConfig{
         TEmulatorUtils.executeOperation(Library.FAIL_SCENARIO);
         Thread.sleep(1500);
 
-        assertEquals("Fail on purpose", 1, 1);
+        assertEquals("Fail on purpose", 1, 0);
         Thread.sleep(1500);
     }
 }
