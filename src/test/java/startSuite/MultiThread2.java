@@ -7,7 +7,7 @@ import org.junit.Test;
 import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
-public class MultiThread extends LocalTestConfig{
+public class MultiThread2 extends LocalTestConfig{
 
     @DisplayName("Test Suite operate Multi Thread Classes")
     @Test
@@ -19,3 +19,4 @@ public class MultiThread extends LocalTestConfig{
     }
 
 }
+// test111
