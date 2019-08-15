@@ -20,4 +20,4 @@ public class AnonymousClassType extends LocalTestConfig{
         Thread.sleep(1500);
     }
 }
-// test333
+// test111
