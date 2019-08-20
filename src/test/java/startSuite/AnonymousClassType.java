@@ -15,7 +15,6 @@ public class AnonymousClassType extends LocalTestConfig{
         Thread.sleep(1500);
       
         
-        
         TEmulatorUtils.executeOperation(Library.ANONYMOUS_CLASS);
         Thread.sleep(1500);
     }
