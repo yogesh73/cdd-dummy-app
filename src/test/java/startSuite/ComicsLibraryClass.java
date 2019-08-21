@@ -17,8 +17,7 @@ public class ComicsLibraryClass extends LocalTestConfig{
         TEmulatorUtils.executeOperation(Library.COMICS_LIBRARY);
      
         Thread.sleep(1500);
-        
-        
+         
         
         
     }
