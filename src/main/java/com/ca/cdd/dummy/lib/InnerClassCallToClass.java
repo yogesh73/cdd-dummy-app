@@ -2,8 +2,7 @@ package com.ca.cdd.dummy.lib;
 
 public class InnerClassCallToClass extends Library {
     
-    
-
+   
     private CallPrintStr callPrintStr;
     private static String NAME = "InnerClassCallToClass";
 
