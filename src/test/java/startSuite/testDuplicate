@@ -5,6 +5,9 @@ import Utils.TEmulatorUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 
+
+
+
 @DisplayName("Monitoring of different class types")
 public class AllClassesTypes1 extends LocalTestConfig {
 
