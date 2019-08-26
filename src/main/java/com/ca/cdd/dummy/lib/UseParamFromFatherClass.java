@@ -1,5 +1,7 @@
 package com.ca.cdd.dummy.lib;
 
+
+
 public class UseParamFromFatherClass extends Library {
 
     private static String NAME = "UseParamFromFatherClass";
