@@ -14,11 +14,3 @@ public class ComicsLibrary extends Library {
 }
 
 // YDaQI
-// inKTY
-// ISzvG
-// hkZqn
-// DPBlZ
-// HvZRK
-// M3WLa
-// zzNvS
-// MipI7
