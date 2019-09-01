@@ -7,3 +7,4 @@ public interface InterfaceClass {
 
     String interfaceStingMethod();
 }
+// demo
