@@ -7,7 +7,7 @@ import org.junit.Test;
 import Utils.LocalTestConfig;
 
 import static org.junit.Assert.assertEquals;
-asdsda
+
 @DisplayName("Monitoring of different class types")
 public class TestForFailScenarion extends LocalTestConfig{
 
@@ -20,6 +20,6 @@ public class TestForFailScenarion extends LocalTestConfig{
         Thread.sleep(1500);
 
         assertEquals("Fail on purpose", 0, 1);
-        Thread.sleep(1500);asddas
+        Thread.sleep(1500);
     }
 }
