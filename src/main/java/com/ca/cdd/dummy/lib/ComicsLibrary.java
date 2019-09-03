@@ -12,5 +12,3 @@ public class ComicsLibrary extends Library {
     }
     
 }
-
-// YDaQI
