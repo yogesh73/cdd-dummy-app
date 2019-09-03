@@ -18,7 +18,7 @@ public class TestForFailScenarion extends LocalTestConfig{
         Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.FAIL_SCENARIO);
         Thread.sleep(1500);
-asdsad
+
         assertEquals("Fail on purpose", 0, 1);
         Thread.sleep(1500);
     }
