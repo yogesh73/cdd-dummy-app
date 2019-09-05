@@ -19,8 +19,6 @@ public class AnonymousClassType extends LocalTestConfig{
         Thread.sleep(1500);
     }
 }
-// test111111
-
 // Recently Modified tests suites App Wc2cC
 // Recently Modified tests suites App v1Yez
 // Recently Modified tests suites App SvRmq
