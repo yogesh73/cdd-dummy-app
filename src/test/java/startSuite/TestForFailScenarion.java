@@ -14,12 +14,12 @@ public class TestForFailScenarion extends LocalTestConfig{
     @DisplayName("Test For Validating Fail Heuristic")
     @Test
     public void comicsLibraryClassExist() throws InterruptedException {
-dfsfdsfsd
+
         Thread.sleep(1500);
         TEmulatorUtils.executeOperation(Library.FAIL_SCENARIO);
         Thread.sleep(1500);
-sdfdsfdsf
-        assertEquals("Fail on purpose", 0, 1)
+
+        assertEquals("Fail on purpose", 0, 1);
         Thread.sleep(1500);
     }
 }
