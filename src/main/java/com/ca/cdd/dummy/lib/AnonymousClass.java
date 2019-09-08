@@ -32,4 +32,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
     }
 }
 
-// class2
+// classaas
