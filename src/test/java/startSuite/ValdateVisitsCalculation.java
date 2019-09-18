@@ -16,8 +16,6 @@ public class ValdateVisitsCalculation extends LocalTestConfig{
         Thread.sleep(1500);
         int numOfVisitForComics =10;
         int numOfVisitForExactScience =5;
-        // remove this comment and the line below it
-        assertEquals("Fail on purpose", 0, 1);
         runOperationXtimes(numOfVisitForComics, Library.COMICS_LIBRARY);
         runOperationXtimes(numOfVisitForExactScience, Library.EXACTSCIENCES_LIBRARY);
         Thread.sleep(1500);
