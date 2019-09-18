@@ -27,3 +27,4 @@ public class ValdateVisitsCalculation extends LocalTestConfig{
         }
     }
 }
+// ga71
