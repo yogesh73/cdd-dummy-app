@@ -11,10 +11,10 @@ public class AllClassesTypes extends LocalTestConfig {
     @DisplayName("Operate All classes in dummy Application")
     @Test
     public void allLibrariesExists() throws InterruptedException {
-vsdfdsv
+
         Thread.sleep(1500);
         TEmulatorUtils.executeAllOperations();
-vdsvdsvsd        
+
         Thread.sleep(1500);
     }
 }
