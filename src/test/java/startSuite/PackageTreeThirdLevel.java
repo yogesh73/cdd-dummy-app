@@ -8,7 +8,7 @@ import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
 public class PackageTreeThirdLevel extends LocalTestConfig{
-sfdfdssfd
+
     @DisplayName("Test Suite operate class on Packages tree under Third Level")
     @Test
     public void thirdLevelExistInFiles() throws InterruptedException {
