@@ -8,7 +8,7 @@ import Utils.LocalTestConfig;
 
 @DisplayName("Monitoring of different class types")
 public class AnonymousClassType extends LocalTestConfig{
-sdfsfdfsd
+
     @DisplayName("Test Suite operate class type Anonymous Class")
     @Test
     public void anonymousClassExistInFiles() throws InterruptedException {
