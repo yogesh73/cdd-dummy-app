@@ -1,6 +1,6 @@
 
-HOST=ratesting-L28083.lvn.broadcom.net
-PORT=8083
+HOST=lvnqa003956.bpc.broadcom.nett
+PORT=8080
 SCHEME=http
 CONTEXT_SUFFIX=/dummy
 SERVER_URL=${SCHEME}://${HOST}:${PORT}/
