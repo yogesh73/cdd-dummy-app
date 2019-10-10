@@ -1,5 +1,5 @@
 
-HOST=lvnqa003956.bpc.broadcom.nett
+HOST=lvnqa003956.bpc.broadcom.net
 PORT=8080
 SCHEME=http
 CONTEXT_SUFFIX=/dummy
