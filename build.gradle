@@ -27,7 +27,7 @@ task buildVersionFile {
         versionFile.createNewFile()
         String timestamp = new Date().format("dd/MMMMM/yyyy 'at' HH:mm (zz)", TimeZone.getTimeZone('GMT+2'))
         def ls = System.lineSeparator()
-        versionFile << "tar.version=${PROJECT_VERSION}${ls}tar.build=${BUILD_NUM}${ls}tar.gitversion=${GIT_VERSION}${ls}tar.versiontime=${timestamp}"
+        versionFile << "app.version=${PROJECT_VERSION}${ls}app.build=${BUILD_NUM}${ls}app.gitversion=${GIT_VERSION}${ls}app.versiontime=${timestamp}"
     }
 }
 
