@@ -11,8 +11,39 @@ dependencies {
 }
 
 
+ext {
+    BUILD_NUM = System.getenv('BUILD_NUMBER') != null ? System.getenv('BUILD_NUMBER') : getCustomBuildId()
+    GIT_VERSION = System.getenv('GIT_REVISION') != null ? System.getenv('GIT_REVISION') : "unknown"
+}
+
+task buildVersionFile {
+    doLast {
+        def buildFolder = new File('build')
+        buildFolder.mkdir()
+        def versionFile = new File(buildFolder, 'version.properties')
+        if (versionFile.exists()) {
+            versionFile.delete()
+        }
+        versionFile.createNewFile()
+        String timestamp = new Date().format("dd/MMMMM/yyyy 'at' HH:mm (zz)", TimeZone.getTimeZone('GMT+2'))
+        def ls = System.lineSeparator()
+        versionFile << "app.version=${PROJECT_VERSION}${ls}app.build=${BUILD_NUM}${ls}app.gitversion=${GIT_VERSION}${ls}app.versiontime=${timestamp}"
+    }
+}
+
+def getCustomBuildId() {
+    String username = System.getProperty("user.name")
+    username = username.replace(' ', '_')
+
+    String time = new Date().format("YYMMdd'T'HHmmss", TimeZone.getTimeZone('GMT+2'))
+
+    return username + "_" + time
+}
+
 war {
+    dependsOn buildVersionFile
     archiveName 'dummy.war'
+    from new File(rootProject.getBuildDir(), "version.properties")
 }
 
 apply from: 'robot.gradle'
