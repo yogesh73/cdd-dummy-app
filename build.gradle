@@ -13,7 +13,7 @@ dependencies {
 
 ext {
     BUILD_NUM = System.getenv('BUILD_NUMBER') != null ? System.getenv('BUILD_NUMBER') : getCustomBuildId()
-    GIT_VERSION = System.getenv('GIT_REVISION') != null ? System.getenv('GIT_REVISION') : "unknown"
+    GIT_VERSION = System.getenv('GIT_COMMIT') != null ? System.getenv('GIT_COMMIT') : "unknown"
 }
 
 task buildVersionFile {
