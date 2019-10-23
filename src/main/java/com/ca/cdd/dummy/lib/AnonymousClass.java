@@ -35,6 +35,3 @@ public class AnonymousClass extends Library implements InterfaceClass {
 // classaas222saas
 
 // 57aFna
-
-// n7job
-// n7job
