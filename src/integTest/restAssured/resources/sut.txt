@@ -1,6 +1,5 @@
 HOST=localhost
-# HOST=lvntest003098.bpc.broadcom.net
-PORT=8085
+PORT=8080
 SCHEME=http
 CONTEXT_SUFFIX=/dummy
 SERVER_URL=${SCHEME}://${HOST}:${PORT}/
