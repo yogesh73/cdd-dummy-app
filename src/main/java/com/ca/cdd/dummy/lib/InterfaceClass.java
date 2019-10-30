@@ -7,11 +7,3 @@ public interface InterfaceClass {
 
     String interfaceStingMethod();
 }
-
-// YDaQI
-// inKTY
-// ISzvG
-// hkZqn
-// DPBlZ
-// HvZRK
-// MipI7
