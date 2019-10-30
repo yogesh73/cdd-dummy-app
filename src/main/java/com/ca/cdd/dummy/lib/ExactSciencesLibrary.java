@@ -8,3 +8,12 @@ public class ExactSciencesLibrary extends Library {
         return NAME;
     }
 }
+// YDaQI
+// inKTY
+// ISzvG
+// hkZqn
+// DPBlZ
+// HvZRK
+// wUaK7
+// roZyj
+// MipI7
