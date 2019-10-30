@@ -83,8 +83,7 @@ task integTest(type: Test) {
             systemProperty newKey, val
         }
     }
-    compile group: "org.glassfish.jersey.containers", name: "jersey-container-servlet-core", version: "2.29"
-    compile group: "org.glassfish.jersey.media", name: "jersey-media-json-jackson", version: "2.29"
+
 }
 
 
