@@ -11,7 +11,7 @@ public class UseParamFromFatherClass extends Library {
         ClassWithParamUsedByOtherOnly a = new ClassWithParamUsedByOtherOnly();
         return a.toUseFromExtendClass;
     }
-
+     
     @Override
     public String getName() {
         return NAME;
