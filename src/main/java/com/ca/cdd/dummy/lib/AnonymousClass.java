@@ -42,5 +42,3 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
 // FBsVj
 // UvuwQ
-// YbVU4
-// YbVU4
