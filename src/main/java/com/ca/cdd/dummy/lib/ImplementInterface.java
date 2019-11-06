@@ -20,5 +20,3 @@ public class ImplementInterface extends Library implements InterfaceClass {
         return NAME;
     }
 }
-
-// 6iI4U
