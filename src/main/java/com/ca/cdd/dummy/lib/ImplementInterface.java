@@ -20,5 +20,3 @@ public class ImplementInterface extends Library implements InterfaceClass {
         return NAME;
     }
 }
-
-// ifJR4
