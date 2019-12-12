@@ -63,3 +63,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 // added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java2
 // added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java3
 // DummyApp
+// be5e7e65-b596-49a7-a1d5-06f046174aeb
