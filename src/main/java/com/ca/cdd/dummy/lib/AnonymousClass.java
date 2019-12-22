@@ -35,5 +35,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
     }
 }
 
-// DxCW8
 // DummyApp
