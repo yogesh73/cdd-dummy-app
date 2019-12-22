@@ -36,7 +36,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 }
 
 
-
-// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java
-// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java2
-// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java3
+23
