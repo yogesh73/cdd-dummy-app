@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url "http://isl-dsdc.ca.com/artifactory/maven-repo" }
+        maven { url "http://artifactory-lvn.broadcom.net/artifactory/maven-repo" }
         mavenCentral()
     }
     dependencies {
