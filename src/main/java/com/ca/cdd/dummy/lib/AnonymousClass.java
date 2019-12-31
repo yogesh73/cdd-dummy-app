@@ -36,5 +36,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 // b139abc5
 
 // DummyApp
-// Sov2e
 // DummyApp
