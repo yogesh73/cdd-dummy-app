@@ -20,5 +20,3 @@ public class AnonymousClassType extends LocalTestConfig{
     }
 }
 // Recently Modified tests suites App Wc2cC
-
-// Recently Modified tests suites App OKHpp
