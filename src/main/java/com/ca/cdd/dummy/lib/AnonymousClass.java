@@ -34,3 +34,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 }
 
 // WlRnO
+// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java
