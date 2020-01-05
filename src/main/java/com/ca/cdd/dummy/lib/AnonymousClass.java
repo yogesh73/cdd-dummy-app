@@ -35,6 +35,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
 // DummyApp
 // OnlineBanking
-// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java
-// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java
 // DgvJE
