@@ -37,5 +37,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 // OnlineBanking
 // OnlineBanking
 // Xzz07
-// ONWYK
 // DummyApp
