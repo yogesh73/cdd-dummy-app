@@ -3,6 +3,7 @@ package com.ca.cdd.dummy.lib;
 public class AnonymousClass extends Library implements InterfaceClass {
  
   private static String NAME = "AnonymousClass";
+ 
 
   InterfaceClass anonymusMethos = new InterfaceClass() {
         @Override
