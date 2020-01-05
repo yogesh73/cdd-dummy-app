@@ -15,3 +15,5 @@ public class FailTestSuite extends Library {
 }
 
 // ga71
+
+// added from cdd-integration-tests/E2eWorkItemsInReleaseQualityReport.java
