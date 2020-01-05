@@ -35,5 +35,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
 // DummyApp
 // OnlineBanking
-// DgvJE
 // OnlineBanking
