@@ -18,4 +18,4 @@ public class InnerClassType extends LocalTestConfig{
         Thread.sleep(1500);
     }
 }
-// 7.1
+// 7.1a
