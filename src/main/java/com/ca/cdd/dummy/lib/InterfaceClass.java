@@ -7,4 +7,4 @@ public interface InterfaceClass {
 
     String interfaceStingMethod();
 }
-// 7.2
+// 7.1
