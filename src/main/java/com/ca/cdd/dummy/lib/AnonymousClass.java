@@ -39,5 +39,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
 // DummyApp
 
-// 1xk5k
 // DummyApp
