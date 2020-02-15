@@ -41,4 +41,3 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
 // DummyApp
 // DummyApp
-// 510ef1a6-ee35-46e9-9e63-b52df426d6d9
