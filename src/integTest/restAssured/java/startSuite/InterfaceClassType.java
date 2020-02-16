@@ -19,3 +19,4 @@ public class InterfaceClassType extends LocalTestConfig{
     }
 
 }
+// 7.2
