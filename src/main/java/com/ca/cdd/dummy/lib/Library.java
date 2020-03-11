@@ -11,3 +11,5 @@ public abstract class Library {
         return getName() + SUFFIX;
     }
 }
+
+// N86s8
