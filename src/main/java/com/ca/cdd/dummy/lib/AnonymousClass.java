@@ -10,6 +10,7 @@ public class AnonymousClass extends Library implements InterfaceClass {
             return null;
          
         }
+   
 
         @Override
         public String interfaceStingMethod() {
