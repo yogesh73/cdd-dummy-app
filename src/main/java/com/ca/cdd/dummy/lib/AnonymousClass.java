@@ -11,7 +11,6 @@ public class AnonymousClass extends Library implements InterfaceClass {
          
         }
    
-
         @Override
         public String interfaceStingMethod() {
             return "Returned From Anonymous Class ";
