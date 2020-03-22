@@ -70,4 +70,3 @@ public class AnonymousClass extends Library implements InterfaceClass {
 
 // bf1170c0-6950-4b9f-ba4f-4bc234051be8
 // DummyApp
-// Nyadq
