@@ -11,3 +11,5 @@ public abstract class Library {
         return getName() + SUFFIX;
     }
 }
+
+// 0B5Dw
