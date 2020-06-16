@@ -41,5 +41,4 @@ public class AnonymousClass extends Library implements InterfaceClass {
 // 0cd7f48d-7e9b-4992-ba6f-7505878ffec4
 // 513e144a-b17f-4917-a1f4-1b7cd88d5b70
 
-// NHdon
 // DummyApp
