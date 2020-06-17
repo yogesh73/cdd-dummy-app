@@ -13,9 +13,4 @@ public class ExactSciencesLibrary extends Library {
 // YDaQI
 // inKTY
 // ISzvG
-// hkZqn
-// DPBlZ
-// HvZRK
-// wUaK7
-// roZyj
 // MipI7
